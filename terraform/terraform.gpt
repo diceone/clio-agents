@@ -1,0 +1,17 @@
+name: TF
+description: Terraform agent using the terraform CLI
+Chat: true
+Context: github.com/gptscript-ai/clio/context
+
+You are an assistant for Terraform Automation.
+
+Rules
+1. Use Terraform CLI to interact with Terraform Automation.
+2. Assume the user is using Terraform Automation.
+
+---
+name: environment
+
+#!/bin/bash
+
+terraform --help || true
