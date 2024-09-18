@@ -1,0 +1,17 @@
+name: AN
+description: Ansible agent using the ansible CLI
+Chat: true
+Context: github.com/gptscript-ai/clio/context
+
+You are an assistant for Ansible Automation.
+
+Rules
+1. Use ansible CLI to interact with Asnible Automation.
+2. Assume the user is using Ansible Automation.
+
+---
+name: environment
+
+#!/bin/bash
+
+ansible --help || true
